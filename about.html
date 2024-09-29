@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatSOFT</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="icon" href="/img/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <!-- <header data-aos="fade-down" data-aos-duration="300" class="aos-init aos-animate sticky">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__content-left">
+                        <div class="header__logos">
+                            <a href="/"><img class="logo header__logo-white" src="/img/logo.png" alt="CatSOFT" /></a>
+                            <a href="/"
+                                ><img class="logo heder__logo-black" src="/img/logoBlack.png" alt="CatSOFT"
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="header__content-right">
+                        <div class="header__nav">
+                            <div class="header__nav-top">
+                                <div class="header__socials">
+                                    <div class="header__socials-item">
+                                        <a
+                                            target="_blank"
+                                            href="https://api.whatsapp.com/send?phone=+79884643194&text=Здравствуйте."
+                                            ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
+                                        ></a>
+                                    </div>
+                                    <div class="header__socials-item">
+                                        <a target="_blank" href="https://t.me/catsoft_channel"
+                                            ><i class="fa-brands fa-telegram" aria-hidden="true"></i
+                                        ></a>
+                                    </div>
+                                    <div
+                                        class="header__socials-item menu-btn"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasExample"
+                                        aria-controls="offcanvasExample"
+                                    >
+                                        <div><i class="fa-solid fa-bars"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-nav">
+                                <div class="bottom-nav-content">
+                                    <nav>
+                                        <ul class="nav__ul">
+                                            <li><a href="/cto.html"> СТО </a></li>
+                                            <li><a href="/business.html"> Готовый бизнес под ключ </a></li>
+                                            <li><a href="/supplier.html"> Авторазборам </a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="offcanvas offcanvas-start"
+                        tabindex="-1"
+                        id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <img
+                                src="/img/close-menu.png"
+                                class="btn-close-menu"
+                                alt="btn close"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            />
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="mobile-menu">
+                                <li class="menu-item"><a class="menu-link" href="/cto.html"> СТО </a></li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="/business.html"> Готовый бизнес под ключ </a>
+                                </li>
+                                <li class="menu-item"><a class="menu-link" href="/supplier.html"> Авторазборам </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+         -->
+
+    <header class="header">
+        <svg class="close-btn" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+            height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z">
+            </path>
+        </svg>
+
+        <div class="header_content-white ">
+            <div class="container">
+                <a href="/" class="header_content-blue_nav_logo">
+                    <img src="/img/logoBlack.png" alt="CatSOFT" />
+                </a>
+                <ul class="header-content-white_nav">
+                    <li><a href="/about.html">О компании</a></li>
+                    <li><a href="/case.html">Кейсы</a></li>
+                    <li><a href="/demo.html">Демо</a></li>
+                </ul>
+                <div class="header-content-white_nav_right-wrapper">
+                    <div class="header_content-white_phone">+7 988-464-31-94</div>
+                    <svg class="menu-btn" stroke="currentColor" fill="#000" stroke-width="0" viewBox="0 0 512 512"
+                        height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M432 176H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 272H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 368H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_content-blue">
+            <div class="container">
+                <ul class="header_content-blue_nav">
+                    <li class="header_content-blue_nav_logo">
+                        <a href="/"> <img src="/img/logoBlack.png" alt="CatSOFT" /></a>
+                    </li>
+                    <li><a href="/pricing.html">Тарифы и цены</a></li>
+                    <li><a href="/supplier.html">Поставщики</a></li>
+                    <li><a href="/reviews.html">Отзывы</a></li>
+                </ul>
+                <button type="submit" class="header_content-blue_right">
+                    Стать поставщиком
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=+79884643194&text=Здравствуйте."
+        class="fixed-whatsapp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <main>
+        <section class="platform ">
+            <div class="container">
+                <div class="platform_description">
+                    <h1>Платформа №1</h1>
+                    <h2>по продаже Б/У запчастей для интернет-магазинов, СТО </h2>
+
+                    <div class="platfor_description_text">
+
+                        <ul>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path
+                                        d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                        fill="#f6c02c" />
+                                </svg>
+                                <p>Неограниченные возможности на платформе</p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path
+                                        d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                        fill="#f6c02c" />
+                                </svg>
+                                <p>Онлайн-проценка </p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path
+                                        d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                        fill="#f6c02c" />
+                                </svg>
+                                <p> Авторазборы, поставщики </p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path
+                                        d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                        fill="#f6c02c" />
+                                </svg>
+                                <p> Максимальные скидки </p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path
+                                        d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                        fill="#f6c02c" />
+                                </svg>
+                                <p> CRM </p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path
+                                        d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                        fill="#f6c02c" />
+                                </svg>
+                                <p> Эквайринг </p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
+                                    fill="none">
+                                    <path
+                                        d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                        fill="#f6c02c" />
+                                </svg>
+                                <p> Автоматическая генерация прайс-листов для
+                                    DROM, AVITO, ZZAP </p>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <img class="platform_img" src="/img/komp.png" alt="CatSOFT" />
+            </div>
+        </section>
+
+        <section class="seller-section ">
+            <div class="container">
+                <div class="seller-section_description">
+                    <h2>Подходит всем, кто продает Б/У запчасти</h2>
+                    <p>
+                        Откройте для себя преимущества Платформы CatSoft, которые помогут бизнесу развиваться и
+                        масштабироваться.
+                    </p>
+
+                    <p>
+                        Есть решения для всех участников рынка от поставщиков Б/У и контрактных автозапчастей до
+                        интернет-магазинов,
+                        СТО и т.д.
+                    </p>
+                    <p>
+                        Задайте вопрос эксперту CatSoft
+                    </p>
+
+                    <a class="grayButton businessConsultButton">
+                        Получить бизнес консультацию
+                    </a>
+                </div>
+                <ul class="seller-section_icon">
+                    <li>
+                        <div class="seller-section_icon_img">
+                            <img src="/img/online-shopping.png" alt="CatSOFT" />
+                        </div>
+                        <h4>Интернет-магазины</h4>
+                    </li>
+                    <li>
+                        <div class="seller-section_icon_img">
+                            <img src="/img/mechanic.png" alt="CatSOFT" />
+                        </div>
+                        <h4>СТО </h4>
+                    </li>
+                    <li>
+                        <div class="seller-section_icon_img">
+                            <img src="/img/shop.png" alt="CatSOFT" />
+                        </div>
+                        <h4>Автомагазины </h4>
+                    </li>
+                    <li>
+                        <div class="seller-section_icon_img">
+                            <img src="/img/car-icon.png" alt="CatSOFT" />
+                        </div>
+                        <h4>Авторазборки</h4>
+                    </li>
+                    <li>
+                        <div class="seller-section_icon_img">
+                            <img src="/img/deal.png" alt="CatSOFT" />
+                        </div>
+                        <h4>Дилерские центры </h4>
+                    </li>
+                    <li>
+                        <div class="seller-section_icon_img">
+                            <img src="/img/service-station.png" alt="CatSOFT" />
+                        </div>
+                        <h4>Станции кузовного ремонта</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="details seller-section seller-section-2">
+            <div class="container">
+                <div class="seller-section_description">
+                    <h2 style="max-width: 100%;">Готовое решение для продажи Б/У автозапчастей</h2>
+
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path
+                                d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                fill="#f6c02c" />
+                        </svg>
+                        Используйте готовое решение и продавайте прямо сейчас.
+                    </p>
+
+                    <p> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path
+                                d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                fill="#f6c02c" />
+                        </svg>
+                        Вам не нужны разработчики, постоянные доработки и дополнительные затраты.
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path
+                                d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                fill="#f6c02c" />
+                        </svg>
+                        Продавайте Б/У автозапчасти правильно, используя продуманный функционал поиска и подбора
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path
+                                d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                fill="#f6c02c" />
+                        </svg>
+                        Эффективные инструменты отработаны на сотнях действующих магазинов и миллионах
+                        проданных запчастей.
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path
+                                d="M5.7203 11.0455L1.4531 6.69202L0 8.16406L5.7203 14L18 1.47204L16.5571 0L5.7203 11.0455Z"
+                                fill="#f6c02c" />
+                        </svg>
+                        С нами вы получаете доступ к эксклюзивным, фиксированным скидкам, не привязанным к
+                        обороту. С каждой запчасти вы зарабатываете от 15% до 40%.
+                    </p>
+
+                </div>
+
+                <img class="details_img" src="img/slide1.jpg" />
+            </div>
+        </section>
+
+        <section class="shopping container">
+            <div class="seller-section_description" style="max-width: 100%; text-align: center;">
+                <h2 style="max-width: 100%"">  Разрабатываем программы для магазинов автозапчастей</h2>
+      </div>
+
+      <ul>
+        <li>
+          <div class=" shopping_icon">
+                    <img src="/img/education.png" alt="CatSOFT" />
+            </div>
+            <h4>8 лет</h4>
+            <h5>На рынке Б/У автозапчастей</h5>
+            </li>
+            <li>
+                <div class="shopping_icon">
+                    <img src="/img/think-outside-the-box.png" alt="CatSOFT" />
+                </div>
+                <h4>Уникальность</h4>
+                <h5>Максимальные скидки до мелочей продуманный функционал</h5>
+            </li>
+            <li>
+                <div class="shopping_icon">
+                    <img src="/img/customer-support.png" alt="CatSOFT" />
+                </div>
+                <h4>Техподдержка</h4>
+                <h5>Адаптация и помощь на всех этапах</h5>
+            </li>
+            <li>
+                <div class="shopping_icon">
+                    <img src="/img/motivation.png" alt="CatSOFT" />
+                </div>
+                <h4>Развитие</h4>
+                <h5>расширяем базу партнеров в постоянном режиме</h5>
+            </li>
+
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_content container">
+            <div class="footer_content_wrapper">
+                <div class="footer_content__contacts">
+                    <div class="footer-contacts">
+                        <a class="footer-contacts__logo-link" href="/">
+                            <img src="/img/logo.png" alt="CatSOFT" class="footer-contacts__logo" />
+                        </a>
+
+                        <p class="footer-contacts__address">
+                            <span>г. ????</span>,&nbsp;<span>?????</span>
+                        </p>
+
+                        <ul class="footer-contacts__offices">
+                            <li class="footer-contacts__office">
+                                <p class="footer-contacts__office-phone" itemprop="telephone">
+                                    <a href="">+7 988-464-31-94</a>
+                                </p>
+                            </li>
+
+                           
+                        </ul>
+
+                        <ul class="footer-contacts__social-list">
+                            <li class="footer-contacts__social-item">
+                                <a href="" class="footer-contacts__social-link" target="_blank"
+                                    rel="nofollow">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li class="footer-contacts__social-item">
+                                <a href=""
+                                    class="footer-contacts__social-link" target="_blank" rel="nofollow">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="footer-contacts__social-item">
+                                <a href="" class="footer-contacts__social-link" target="_blank"
+                                    rel="nofollow">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer_content__navigation">
+                    <div class="footer_content__menu">
+                        <div class="main-menu">
+                            <ul class="main-menu__list">
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="/about.html">
+                                        <span>О компании</span>
+                                    </a>
+                                </li>
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="/case.html">
+                                        <span>Кейсы</span>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="main-menu__list">
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="/demo.html">
+                                        <span>Демо</span>
+                                    </a>
+                                </li>
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="/pricing.html">
+                                        <span>Тарифы и цены</span>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                            <ul class="main-menu__list">
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="/supplier.html">
+                                        <span>Поставщики</span>
+                                    </a>
+                                </li>
+                                <li class="main-menu__item">
+                                    <a class="main-menu__link" href="/reviews.html">
+                                        <span>Отзывы</span>
+                                    </a>
+                                </li>
+                                <!--<li class="main-menu__item">
+                  <a class="main-menu__link" href="/about/">
+                    <span>О компании</span>
+                  </a>
+
+                  <ul class="main-menu__sub-list">
+                    <li class="main-menu__sub-item">
+                      <a class="main-menu__sub-link" href="/about/certificates/">Сертификаты</a>
+                    </li>
+                    <li class="main-menu__sub-item">
+                      <a class="main-menu__sub-link" href="/about/vacancy/">Вакансии</a>
+                    </li>
+                    <li class="main-menu__sub-item">
+                      <a class="main-menu__sub-link" href="/about/press/">Пресса о нас</a>
+                    </li>
+                  </ul>
+                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_content__conditions">
+                <p class="footer_content__copyright">
+                    Copyright © 2024 Catsoft
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <footer>
+      <div class="container">
+        <div class="footer-top">
+          <img class="logo" src="/img/logo.png" alt="CatSOFT" />
+          <div class="footer-socials">
+            <a
+              href="https://api.whatsapp.com/send?phone=+79884643194&text=Здравствуйте."
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me/catsoft_channel" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-main">
+          <div class="footer-main__inner">
+            <div class="footer-item footer-item-1">
+              <ul>
+                <li>
+                  <a href="/cto.html">СТО</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item footer-item-2">
+              <ul>
+                <li>
+                  <a href="/business.html">Готовый бизнес под ключ </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item footer-item-3">
+              <ul>
+                <li>
+                  <a href="/supplier.html">Авторазборам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item footer-item-4 footer-numbers">
+              <ul>
+                <li>
+                  <a href="tel:+79691290747"
+                    ><i
+                      style="position: relative; left: -6px"
+                      class="fa-solid fa-phone"
+                      aria-hidden="true"
+                    ></i
+                    >+7 (969) 129-07-47</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.0-beta.26/scrollreveal.js"></script>
+    <script src="https://kit.fontawesome.com/d4a8753bf6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

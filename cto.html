@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>СТО и магазины</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="icon" href="/img/fav.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="/css/reset.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header data-aos="fade-down" data-aos-duration="300" class="aos-init aos-animate sticky">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__content-left">
+                        <div class="header__logos">
+                            <a href="/"><img class="logo header__logo-white" src="/img/logo.png" alt="CatSOFT" /></a>
+                            <a href="/"
+                                ><img class="logo heder__logo-black" src="/img/logoBlack.png" alt="CatSOFT"
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="header__content-right">
+                        <div class="header__nav">
+                            <div class="header__nav-top">
+                                <div class="header__socials">
+                                    <div class="header__socials-item">
+                                        <a
+                                            target="_blank"
+                                            href="https://api.whatsapp.com/send?phone=+79884643194&text=Здравствуйте."
+                                            ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
+                                        ></a>
+                                    </div>
+                                    <div class="header__socials-item">
+                                        <a target="_blank" href="https://t.me/catsoft_channel"
+                                            ><i class="fa-brands fa-telegram" aria-hidden="true"></i
+                                        ></a>
+                                    </div>
+                                    <div
+                                        class="header__socials-item menu-btn"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasExample"
+                                        aria-controls="offcanvasExample"
+                                    >
+                                        <div><i class="fa-solid fa-bars"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-nav">
+                                <div class="bottom-nav-content">
+                                    <nav>
+                                        <ul class="nav__ul">
+                                            <li><a href="/cto.html"> СТО </a></li>
+                                            <li><a href="/business.html"> Готовый бизнес под ключ </a></li>
+                                            <li><a href="/supplier.html"> Авторазборам </a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="offcanvas offcanvas-start"
+                        tabindex="-1"
+                        id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <img
+                                src="/img/close-menu.png"
+                                class="btn-close-menu"
+                                alt="btn close"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            />
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="mobile-menu">
+                                <li class="menu-item"><a class="menu-link" href="/cto.html"> СТО </a></li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="/business.html"> Готовый бизнес под ключ </a>
+                                </li>
+                                <li class="menu-item"><a class="menu-link" href="/supplier.html"> Авторазборам </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=+79884643194&text=Здравствуйте."
+            class="fixed-whatsapp"
+        >
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <main>
+            <section class="creative-parallax--slider">
+                <div class="slider-inner">
+                    <div class="slider-row">
+                        <div class="parallax-slider slider-wrap">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide" style="background-image: url('/img/slide1.jpg')">
+                                    <div class="swiper-slide--inner">
+                                        <div class="slide--bg">
+                                            <div class="slide-bg--inner"></div>
+                                        </div>
+                                        <div class="slide-detail">
+                                            <div class="slide-main--subheading">
+                                                <span><i class="fa-solid fa-award"></i> СТО</span>
+                                            </div>
+                                            <div class="slide-main--heading">
+                                                <div class="from-left">УВЕЛИЧИВАЕМ ПРИБЫЛЬ ЗА СЧЕТ</div>
+                                                <div class="from-right">ОПТИМИЗАЦИИ ПРОЦЕССА ПОИСКА</div>
+                                            </div>
+                                            <div class="slide-des">
+                                                <p>CATSOFT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide" style="background-image: url('/img/slide2.jpg')">
+                                    <div class="swiper-slide--inner">
+                                        <div class="slide--bg">
+                                            <div class="slide-bg--inner"></div>
+                                        </div>
+                                        <div class="slide-detail">
+                                            <div class="slide-main--subheading">
+                                                <span><i class="fa-solid fa-award"></i> СТО</span>
+                                            </div>
+                                            <div class="slide-main--heading">
+                                                <div class="from-left">УВЕЛИЧИВАЕМ ПРИБЫЛЬ ЗА СЧЕТ ЗАКАЗА</div>
+                                                <div class="from-right">АВТОЗАПЧАСТЕЙ С МАКСИМАЛЬНЫМИ</div>
+                                                <div class="from-left">СКИДКАМИ ОТ АВТОРАЗБОРОВ</div>
+                                            </div>
+                                            <div class="slide-des">
+                                                <p>CATSOFT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide" style="background-image: url('/img/slide3.jpg')">
+                                    <div class="swiper-slide--inner">
+                                        <div class="slide--bg">
+                                            <div class="slide-bg--inner"></div>
+                                        </div>
+                                        <div class="slide-detail">
+                                            <div class="slide-main--subheading">
+                                                <span><i class="fa-solid fa-award"></i>СТО</span>
+                                            </div>
+                                            <div class="slide-main--heading">
+                                                <div class="from-left">УВЕЛИЧИВАЕМ ПРИБЫЛЬ ЗА СЧЕТ</div>
+                                                <div class="from-right">АССОРТИМЕНТА - БОЛЕЕ</div>
+                                                <div class="from-left">11 МЛН. ТОВАРОВ</div>
+                                            </div>
+                                            <div class="slide-des">
+                                                <p>CATSOFT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next slide-btns"></div>
+                            <div class="swiper-button-prev slide-btns"></div>
+                            <div class="autoplay-progress">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advertisers">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-header text-center">
+                            <h2 class="fw-bold fs-1">
+                                Клиенты у магазина
+                                <span class="b-class-secondary">автозапчастей </span> будут всегда! Почему?
+                            </h2>
+                            <p class="sec-icon mb-4"><i class="fa-solid fa-car"></i></p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-right" data-aos-duration="500">
+                            <div class="service-card">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <h3>Тратите большое количество времени на поиск нужной автозапчасти</h3>
+                                <p>
+                                    Мы поможем вам сэкономить время и усилия, предлагая быстрый доступ к широкому
+                                    ассортименту автозапчастей от проверенных авторазборов. Забудьте о долгих поисках.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="service-card">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-percent"></i>
+                                </div>
+                                <h3>Покупаете запчасть с минимальной скидкой, либо не имеете скидок вообще</h3>
+                                <p>
+                                    С нами вы получаете доступ к эксклюзивным фиксированным скидкам, не привязанным к
+                                    обороту. С каждого заказа запчасти, вы зарабатываете от 15%
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-left" data-aos-duration="500">
+                            <div class="service-card">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                                </div>
+                                <h3>
+                                    Самостоятельно устанавливаете наценку на купленную запчасть и теряете клиентов из-за
+                                    высокой стоимости
+                                </h3>
+                                <p>
+                                    Клиент не уйдёт искать запчасть самостоятельно из-за высокой цены, потому что
+                                    стоимость запчасти от наших авторазборов всегда в рынке
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-right" data-aos-duration="1000">
+                            <div class="service-card">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <h3>
+                                    В моменте не можете сделать клиенту предложение, т.к. тратите много времени на поиск
+                                    автозапчасти
+                                </h3>
+                                <p>
+                                    Наш сервис ускоряет поиск автозапчастей и помогает быстро формировать предложения.
+                                    Экономьте время и увеличивайте продажи с нашими точными решениями.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="500">
+                            <div class="service-card">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <h3>
+                                    Покупаете запчасти с рук, рискуя наткнуться на мошенников и не имеете гарантийных
+                                    сроков
+                                </h3>
+                                <p>
+                                    Все наши авторазборки проверены временем и тысячами заказов. Покупайте с уверенностью
+                                    в надежности каждой детали
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12" data-aos="zoom-in-left" data-aos-duration="1000">
+                            <div class="service-card">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-truck-field"></i>
+                                </div>
+                                <h3>
+                                    Не имеете выход на проверенных авторазборов и имеете маленький ассортимент б\у
+                                    автозапчастей
+                                </h3>
+                                <p>
+                                    Получите доступ к проверенным авторазборам и расширьте ассортимент качественных б/у
+                                    автозапчастей для удовлетворения любых потребностей клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="members">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="fw-bold fs-1">
+                            Мы решили все
+
+                            <span class="b-class-secondary">ваши проблемы, </span>чтобы вы могли <br />
+                            зарабатывать и развиваться
+                        </h2>
+                        <p class="sec-icon mb-4"><i class="fa-solid fa-car"></i></p>
+                    </div>
+                    <div class="members-upper mb-5" data-aos="fade-right" data-aos-duration="500">
+                        <div class="member-card">
+                            <div class="number-circle mb-4">
+                                <p>01</p>
+                            </div>
+                            <div class="member-info">
+                                <h3>Фиксированная скидка от всех авторазборов эксклюзивно для наших партнеров</h3>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="number-circle mb-4">
+                                <p>02</p>
+                            </div>
+                            <div class="member-info">
+                                <h3>Быстрая онлайн - проценка, сбор корзины и заказ нужных запчастей для клиента</h3>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="number-circle mb-4">
+                                <p>03</p>
+                            </div>
+                            <div class="member-info">
+                                <h3>Проверенная база, состоящая из 120+ авторазборов по РФ и СНГ</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="members-upper mb-5 members-upper-2" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="member-card">
+                            <div class="number-circle mb-4">
+                                <p>04</p>
+                            </div>
+                            <div class="member-info">
+                                <h3>Возможность реализации своих остатков запчастей через личный кабинет платформы</h3>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="number-circle mb-4">
+                                <p>05</p>
+                            </div>
+                            <div class="member-info">
+                                <h3>Ассортимент 11+ млн. автозапчастей, позволяющий зарабатывать на каждом клиенте</h3>
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            <div class="number-circle mb-4">
+                                <p>06</p>
+                            </div>
+                            <div class="member-info">
+                                <h3>Удобное программное обеспечение для ведения и учета клиентской базы</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="table-section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="fw-bold fs-1">
+                            На чем строится
+                            <span class="b-class-secondary">заработок </span>
+                        </h2>
+                        <p class="sec-icon mb-4"><i class="fa-solid fa-car"></i></p>
+                    </div>
+                    <table class="responsive-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>День</th>
+                                <th>Месяц</th>
+                                <th>Итог</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Кол-во машин в день">Кол-во машин в день</td>
+                                <td data-label="День">4</td>
+                                <td data-label="Месяц">120</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Ср. кол-во запчастей на машину">Ср. кол-во запчастей на машину</td>
+                                <td data-label="День">2</td>
+                                <td data-label="Месяц">240</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Ср. чек запчасти">Ср. чек запчасти</td>
+                                <td data-label="День">10 000р.</td>
+                                <td data-label="Месяц">2 400 000р.</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td colspan="3" data-label="Итог">Ваш заработокна скидке авторазбора</td>
+                                <td data-label="Итог">360 000р.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="package">
+                <div class="container">
+                    <div class="package__inner">
+                        <div class="section-header text-center">
+                            <h2 class="fw-bold fs-1">
+                                Работая с
+
+                                <span class="b-class-secondary"> CATSOFT</span>, вы получаете
+                            </h2>
+                            <p class="sec-icon mb-4"><i class="fa-solid fa-car"></i></p>
+                        </div>
+                        <div class="advantages">
+                            <div class="container">
+                                <div class="row">
+                                    <div
+                                        data-aos="fade-up"
+                                        class="col-12 col-xl-3 col-lg-4 col-md-6 col-sm-6 aos-init aos-animate"
+                                    >
+                                        <div class="advantages_card">
+                                            <div class="advantages_card_icon">
+                                                <img src="/img/software.png" alt="Icon" />
+                                            </div>
+                                            <div class="advantages_content">
+                                                <h3>Программное обеспечени - личный кабинет на платформе CATSOFT</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-aos="fade-up"
+                                        class="col-12 col-xl-3 col-lg-4 col-md-6 col-sm-6 aos-init aos-animate"
+                                    >
+                                        <div class="advantages_card">
+                                            <div class="advantages_card_icon">
+                                                <img src="/img/discount.png" alt="Icon" />
+                                            </div>
+                                            <div class="advantages_content">
+                                                <h3>
+                                                    Максимальные скидки от авторазборов без привязки к
+                                                    обороту
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-aos="fade-up"
+                                        class="col-12 col-xl-3 col-lg-4 col-md-6 col-sm-6 aos-init aos-animate"
+                                    >
+                                        <div class="advantages_card">
+                                            <div class="advantages_card_icon">
+                                                <img src="/img/price-tag.png" alt="Icon" />
+                                            </div>
+                                            <div class="advantages_content">
+                                                <h3>Гибкие настройки ценовой политики</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-aos="fade-up"
+                                        class="col-12 col-xl-3 col-lg-4 col-md-6 col-sm-6 aos-init aos-animate"
+                                    >
+                                        <div class="advantages_card">
+                                            <div class="advantages_card_icon">
+                                                <img src="/img/brand-image.png" alt="Icon" />
+                                            </div>
+                                            <div class="advantages_content">
+                                                <h3>Логотип Вашего бренда на каждой фотографии</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-aos="fade-up"
+                                        class="col-12 col-xl-3 col-lg-4 col-md-6 col-sm-6 aos-init aos-animate"
+                                    >
+                                        <div class="advantages_card">
+                                            <div class="advantages_card_icon">
+                                                <img src="/img/menu.png" alt="Icon" />
+                                            </div>
+                                            <div class="advantages_content">
+                                                <h3>Виджет для создания сайта</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-aos="fade-up"
+                                        class="col-12 col-xl-3 col-lg-4 col-md-6 col-sm-6 aos-init aos-animate"
+                                    >
+                                        <div class="advantages_card">
+                                            <div class="advantages_card_icon">
+                                                <img src="/img/crm.png" alt="Icon" />
+                                            </div>
+                                            <div class="advantages_content">
+                                                <h3>CRM систему с возможностью ведения клиентской базы, учета и анализа всех сделок</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-aos="fade-up"
+                                        class="col-12 col-xl-3 col-lg-4 col-md-6 col-sm-6 aos-init aos-animate"
+                                    >
+                                        <div class="advantages_card">
+                                            <div class="advantages_card_icon">
+                                                <img src="/img/graduation-cap.png" alt="Icon" />
+                                            </div>
+                                            <div class="advantages_content">
+                                                <h3>Поддержку отдела адаптации и обучение работе в нише <br> продаж Б/У запчастей</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-aos="fade-up"
+                                        class="col-12 col-xl-3 col-lg-4 col-md-6 col-sm-6 aos-init aos-animate"
+                                    >
+                                        <div class="advantages_card">
+                                            <div class="advantages_card_icon">
+                                                <img src="/img/world-wide-web.png" alt="Icon" />
+                                            </div>
+                                            <div class="advantages_content">
+                                                <h3>
+                                                    
+                                                    Разработку индивидуального сайта, либо подключение к вашему сайту и
+                                                    запуск рекламных кампаний
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lead-magnet">
+                <div class="container">
+                    <div class="d-block d-lg-flex justify-content-center">
+                        <h2>
+                            Оставьте заявку и получите пробные <span>5 заказов</span> для ваших клиентов.
+                            <b>Зарабатывай сейчас, плати потом!</b>
+                        </h2>
+                        <div class="arrow-decor">
+                            <svg
+                                width="110"
+                                height="92"
+                                viewBox="0 0 110 92"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M64.3767 34.6767C66.1684 32.7959 67.212 30.3464 67.1415 27.2639C66.9233 17.7283 60.9576 12.296 52.8788 9.61366C41.0823 5.6974 24.7273 7.73696 15.9616 11.1284C15.5463 11.2885 15.3412 11.7554 15.5019 12.1688C15.662 12.5842 16.1284 12.7911 16.5437 12.631C25.0513 9.33877 40.9234 7.3424 52.3724 11.1424C59.7902 13.6055 65.331 18.5431 65.5302 27.3014C65.5914 29.908 64.7038 31.9721 63.193 33.5662C62.136 32.595 61.0655 31.6663 59.983 30.7829C56.9939 28.3449 48.1705 23.5336 41.0043 22.5266C35.8634 21.8056 31.5796 23.0376 30.4088 27.9253C29.7586 30.6422 30.9163 33.0439 33.2703 34.954C36.5052 37.5819 42.0862 39.2751 47.7909 39.5644C52.5405 39.806 57.3665 39.0792 60.9826 37.1823C61.7765 36.7637 62.5151 36.2925 63.1832 35.7624C77.5865 49.5113 88.7739 70.8803 90.7127 90.2657C90.7585 90.7072 91.1514 91.0313 91.5949 90.986C92.0378 90.9427 92.3605 90.5473 92.3166 90.1063C90.3447 70.4048 79.0039 48.6896 64.3767 34.6767ZM61.9867 34.6443C60.9913 33.7337 59.9835 32.8619 58.9646 32.0313C56.0995 29.696 47.647 25.0871 40.7807 24.1226C36.567 23.5301 32.9345 24.2949 31.9747 28.3007C31.4719 30.4048 32.4638 32.2234 34.2848 33.7045C36.2896 35.3317 39.2696 36.5468 42.6017 37.265C47.6604 38.3553 53.5307 38.2934 58.1075 36.6749C59.5577 36.1629 60.876 35.4913 61.9867 34.6443Z"
+                                    fill="#fcc205"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M68.6578 69.768C77.3865 73.7859 85.5256 82.3761 90.5442 90.6287C90.775 91.0083 91.2709 91.1286 91.6505 90.8978C92.03 90.6671 92.1522 90.1716 91.9215 89.7921C86.747 81.2809 78.33 72.448 69.3317 68.3052C68.9291 68.1194 68.4503 68.2963 68.2641 68.7009C68.0783 69.1035 68.2551 69.5822 68.6578 69.768Z"
+                                    fill="#fcc205"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M92.1368 89.8558C90.1026 82.1187 92.3306 71.6836 96.2827 64.7005C96.5022 64.3132 96.367 63.8204 95.9792 63.6028C95.5919 63.3833 95.1011 63.519 94.8816 63.9063C90.7415 71.222 88.4484 82.1593 90.5794 90.2653C90.6914 90.6952 91.1338 90.9527 91.5636 90.8406C91.994 90.7265 92.2508 90.2861 92.1368 89.8558Z"
+                                    fill="#fcc205"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="lead-magnet__form js-wrap-send-form-test">
+
+                        <div class="js-res-send-form-test" style="display: none;"></div>
+
+                        <form id="get_test_cs">
+                            <input type="hidden" name="type" value="test" />
+                            <div class="lead-magnet__form-inner">
+                                <div class="lead-magnet__form-item">
+                                    <input name="name" id="name" placeholder="Ваше имя: *" required />
+                                </div>
+                                <div class="lead-magnet__form-item">
+                                    <input name="phone" id="phone" placeholder="Ваш телефон: *" required />
+                                </div>
+                                <div class="lead-magnet__form-item">
+                                    <input name="email" id="email" placeholder="E-mail: *" required/>
+                                </div>
+                                <div class="lead-magnet__form-item">
+                                    <textarea name="text" id="message" placeholder="Ваше сообщение:"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit">Отправить</button>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="onfooter">
+            <div class="container animated zoomIn">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 data-aos-duration="1000" data-aos="zoom-in">Хотите получить информацию?</h2>
+                        <div class="start">
+                            <button class="onfooter-btn mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Заказать звонок
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center" id="exampleModalTitle">Заказать звонок</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="block">
+                            <div class="form">
+                                <div class="form-part">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12 col-md-offset-1 mt-3">
+                                                <div class="f-line"></div>
+                                                <div class="contact-inner js-wrap-send-form">
+
+                                                    <div class="js-res-send-form" style="display: none;"></div>
+
+                                                    <form method="post" id="sendmail" name="sendmail" action="">
+                                                        <p style="margin-top: 15px"></p>
+                                                        <div class="row">
+
+
+                                                            <div class="col-md-6 col-12 justify-content-center">
+                                                                <label class="infomy">Ваш номер: <span>*</span> </label>
+                                                                <input
+                                                                        class="elaqe"
+                                                                        type="tel"
+                                                                        name="phone"
+                                                                        maxlength="16"
+                                                                        required
+                                                                />
+                                                            </div>
+
+                                                            <div class="col-md-6 col-12 justify-content-center">
+                                                                <label class="infomy">Ваше имя:</label>
+                                                                <input type="text" name="name" />
+                                                            </div>
+
+                                                            <div class="col-md-6 col-12 mt-4">
+                                                                <div class="button">
+                                                                    <input
+                                                                            type="submit"
+                                                                            name="submit"
+                                                                            value="Отправить"
+                                                                            id="button"
+                                                                            class="btn"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer_content container">
+                <div class="footer_content_wrapper">
+                    <div class="footer_content__contacts">
+                        <div class="footer-contacts">
+                            <a class="footer-contacts__logo-link" href="/">
+                                <img src="/img/logo.png" alt="CatSOFT" class="footer-contacts__logo" />
+                            </a>
+    
+                            <p class="footer-contacts__address">
+                                <span>г. ????</span>,&nbsp;<span>?????</span>
+                            </p>
+    
+                            <ul class="footer-contacts__offices">
+                                <li class="footer-contacts__office">
+                                    <p class="footer-contacts__office-phone" itemprop="telephone">
+                                        <a href="">+7 988-464-31-94</a>
+                                    </p>
+                                </li>
+    
+                               
+                            </ul>
+    
+                            <ul class="footer-contacts__social-list">
+                                <li class="footer-contacts__social-item">
+                                    <a href="" class="footer-contacts__social-link" target="_blank"
+                                        rel="nofollow">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-contacts__social-item">
+                                    <a href=""
+                                        class="footer-contacts__social-link" target="_blank" rel="nofollow">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-contacts__social-item">
+                                    <a href="" class="footer-contacts__social-link" target="_blank"
+                                        rel="nofollow">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="footer_content__navigation">
+                        <div class="footer_content__menu">
+                            <div class="main-menu">
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__item">
+                                        <a class="main-menu__link" href="/about.html">
+                                            <span>О компании</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-menu__item">
+                                        <a class="main-menu__link" href="/case.html">
+                                            <span>Кейсы</span>
+                                        </a>
+                                    </li>
+    
+    
+                                </ul>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__item">
+                                        <a class="main-menu__link" href="/demo.html">
+                                            <span>Демо</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-menu__item">
+                                        <a class="main-menu__link" href="/pricing.html">
+                                            <span>Тарифы и цены</span>
+                                        </a>
+                                    </li>
+    
+    
+                                </ul>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__item">
+                                        <a class="main-menu__link" href="/supplier.html">
+                                            <span>Поставщики</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-menu__item">
+                                        <a class="main-menu__link" href="/reviews.html">
+                                            <span>Отзывы</span>
+                                        </a>
+                                    </li>
+                                    <!--<li class="main-menu__item">
+                      <a class="main-menu__link" href="/about/">
+                        <span>О компании</span>
+                      </a>
+    
+                      <ul class="main-menu__sub-list">
+                        <li class="main-menu__sub-item">
+                          <a class="main-menu__sub-link" href="/about/certificates/">Сертификаты</a>
+                        </li>
+                        <li class="main-menu__sub-item">
+                          <a class="main-menu__sub-link" href="/about/vacancy/">Вакансии</a>
+                        </li>
+                        <li class="main-menu__sub-item">
+                          <a class="main-menu__sub-link" href="/about/press/">Пресса о нас</a>
+                        </li>
+                      </ul>
+                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer_content__conditions">
+                    <p class="footer_content__copyright">
+                        Copyright © 2024 Catsoft
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.0-beta.26/scrollreveal.js"></script>
+        <script src="https://kit.fontawesome.com/d4a8753bf6.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="/js/index.js"></script>
+    </body>
+</html>
